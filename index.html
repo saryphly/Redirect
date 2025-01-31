@@ -6,7 +6,8 @@
     <title>Redirecting...</title>
     <script>
         window.onload = function() {
-            const deepLink = "StudySpecialAppInstalled://";
+            const urlParams = new URLSearchParams(window.location.search);
+            const deepLink = urlParams.get('link');
 
             if (deepLink) {
                 window.location.href = deepLink;
