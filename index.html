@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            const deepLink = "StudySpecialAppInstalled://";
+
+            if (deepLink) {
+                window.location.href = deepLink;
+            } else {
+                document.body.innerHTML = "<p>Invalid link.</p>";
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
